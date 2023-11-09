@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-ua-Compatiable" content="IE=edge">
+        <meta name="viewpoint" content="width=device=width, intial-scale=1.0">
+        <title>Age Calcutor⌛</title>
+        <link rel="styelsheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Age Calculator
+            </h1>
+            <div class="form">
+                <label for="birthday">Enter your date of birth</label>
+                <input type="date" id="birthday" name="birthday">
+                <button id="btn">Calculate Age</button>
+            </div>
+        </div>
+        <p id="result">
+                    
+        </p>
+        <script>
+            const btnEl=document.getElementById("btn");
+            const birthdayEl=document.getElementById("birthday");
+            const resultEL=document.getElementById("result").value;
+
+            const birthdayValue=birthdayEl.value;
+            function calculateAge(){
+                if(birthday==""){
+                    alert("please enter your birthday");
+                }
+                else{
+                    const age= getAge(birthdayValue);
+                    const result=`Your age is ${age} ${age > 1 ? "years" : "year"}old`;
+                    document.getElementById("result").innerHTML=result;
+                }
+            }
+
+            function getAge(birthdayValue){
+                const currentDate=new Date();
+                const birthdayDate=new Date(birthdayValue);
+                var age=currentDate.getFullYear()-birthdayDate.getFullYear();
+                const month=currentDate.getMonth()-birthdayDate.getMonth();
+                if(month<0||(month==0&&cureentDate.getDate()<birthdayDate.getDate())){
+                    age--;
+                }
+                return age;
+            }
+            var age=getAge(birthdayValue);
+            console.log("age: "+age);
+            btnEl.addEventListener("click",calculateAge);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+.fixed-top lift{
+    background-color: #333;
+    height: 60px;
+    padding:0px 0px;
+    
+}
+.ulcolor li{
+    font-size: 20px;
+    flex-direction: center;
+    color:white;
+}
+.char li a{
+  /* color:#9B9B9B;  */
+  display:block;
+  width:150px;
+  height:60px;  
+  padding:5px 40px ;
+}
+.btns{
+  font-size:25px ;
+  background-color:white;
+  color:black;
+  text-align:start;
+  padding-left:8px ;
+  width:60px;
+  height:40px;
+}
+/* .btns {
+  height:40px;
+  font-size:30px ;
+  align-content: space-around;
+  margin-left:0px;
+}*/
+.ima{
+  height: 700px;
+  width:100%;
+  background-image: url(https://www.fubiz.net/wp-content/uploads/2018/05/adobestocknb0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header h1{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top:240px;
+
+}
+.chan .btnO{
+  color:white;
+  background-color: orangered;
+  font-size:18px ;
+  border-radius:0px;
+  border:2px solid;
+  font-weight:500;
+  margin-right: 15px;
+  padding: 17px 35px;
+}
+.btnO:hover{
+  color:orangered;
+  border-color: orangered;
+  border-radius:2px solid;
+  background-color:#fcf2eb;
+}
+.chan .btnT{
+  color:orangered;
+  background-color: white;
+  font-size:18px ;
+  border-radius:0px;
+  border:2px solid;
+  font-weight:500;
+  margin-right: 15px;
+  padding: 17px 35px;
+}
+.btnT:hover{
+  cursor:pointer ;
+  color:white;
+  border-color: orangered;
+  border-radius:2px solid;
+  background-color:orangered;
+}
+.ltrp .btnL{
+  color:white;
+  background-color: orangered;
+  font-size:18px ;
+  border-radius:0px;
+  border:2px solid;
+  font-weight:500;
+  margin-right: 15px;
+  padding: 17px 35px;
+}
+.btnL:hover{
+  color:orangered;
+  border-color: orangered;
+  border-radius:2px solid;
+  background-color:white;
+}
+
+.row h3{
+  color:#65C9BB;
+}
+
+.txthov:hover{
+  color: orangered;
+}
+.blue h1{
+    color:#263b5c; 
+    font-size:40px;
+     width:500px; 
+    margin:0px 0px 40px 0px 
+}
